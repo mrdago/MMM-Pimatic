@@ -10,6 +10,8 @@
 
 var NodeHelper = require('node_helper');
 var io = require('socket.io-client');
+var exec = require('child_process').exec;
+var execSync = require('child_process').execSync;
 
 module.exports = NodeHelper.create({
 	start: function () {
@@ -31,12 +33,6 @@ module.exports = NodeHelper.create({
           timeout: 20000,
           forceNew: true
         });
-        /*
-        socket.on('connect', function() {
-            console.log(self.name + ': listening on messages from pimatic ... ');
-            self.sendSocketNotification('PIMATIC_CONNECTION_ACTIVE');
-        });
-        */
         
         // get actual values of pimatic variables
         socket.on('variables', function(variables){         
@@ -55,6 +51,34 @@ module.exports = NodeHelper.create({
         if (notification == 'CONNECT') {
             this.connectToPimatic(payload);             // Connect and listen to pimatic host
 		}
-	},
+        if (notification == 'PLAY_SOUND_NOTIFICATION') {
+            
+            if( typeof payload.device === 'undefined'){
+                payload.device = ''
+            } else {
+                payload.device = '-o ' + payload.device
+            }
+            if( typeof payload.loop === 'undefined' || payload.loop === 'once'){
+                payload.loop = ''
+            } else {
+                if( payload.loop === 'endless' ) {payload.loop = '--loop'}
+            }
 
+            //console.log("/usr/bin/omxplayer" + payload.device + ' ' + payload.loop + ' ' + this.path +'/'+ payload.file)
+            exec("/usr/bin/omxplayer " + payload.device + ' ' + payload.loop + ' ' + this.path +'/'+payload.file);
+        }
+        if (notification == 'STOP_SOUND_NOTIFICATION') {
+            try {
+                execSync('sudo kill -15 $(pgrep -f omxplayer)');
+            } 
+            catch (error) {
+                //console.log('execSync error ');
+                //console.log(error);
+                //error.status;  // Might be 127 in your example.
+                //error.message; // Holds the message you typically want.
+                //error.stderr;  // Holds the stderr output. Use `.toString()`.
+                //error.stdout;  // Holds the stdout output. Use `.toString()`.    
+            }
+        }    
+    },
 })

@@ -1,10 +1,11 @@
 # Module: MMM-Pimatic
-This [MagicMirror](https://github.com/MichMich/MagicMirror) module, connects to a [pimatic](https://pimatic.org/) home automation server to listen on device attribute changes. Received values are compared to a default value and differing values are displayed on the MagicMirror screen (Notification Board). Optional an audio alarm can be triggered. As an example, in case of an emergency alarm a sirene (mp3) can be played in endless loop by omxplayer (see example in config.json).<br>The modul can also be used to monitor pimatic temperature values displayed in a separate table (Temperature Board).
+This [MagicMirror](https://github.com/MichMich/MagicMirror) module, connects to a [pimatic](https://pimatic.org/) home automation server to listen on device attribute changes. Received values are compared to a default value and differing values are displayed on the MagicMirror screen (Notification Board). Optional an audio alarm can be triggered. As an example, in case of an emergency alarm a sirene (mp3) can be played in endless loop by omxplayer (see example in config.json).<br>
 
 **Notification Board:**
 
 ![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-M1-Pimatic/blob/master/NotificationBoard.PNG?raw=true)
 
+The modul can also be used to monitor pimatic temperature values displayed in a separate table (Temperature Board).
 **Temperature Board:**
 
 ![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-M1-Pimatic/blob/master/Temperatures.JPG?raw=true)

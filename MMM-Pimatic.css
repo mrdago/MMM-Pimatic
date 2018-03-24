@@ -1,0 +1,234 @@
+.wrapper {}
+.displaytitle {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: Roboto Condensed;
+	border-bottom: 1px solid #666;
+	line-height: 15px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	color: #999;
+}
+.status {
+	color: #666;
+	width: auto;
+	font-size: 20px;
+	line-height: 25px;
+	text-align: left;
+}
+.pimatic {
+	background-image: url(icons/icons-pimatic.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+.icon-Alarmanlage {
+	width: 256px;
+	height: 256px;
+	background-position: -5px -5px;
+}
+.icon-Muellabfuhr {
+	width: 256px;
+	height: 256px;
+	background-position: -271px -5px;
+}
+.icon-Default {
+	width: 256px;
+	height: 256px;
+	background-position: -5px -271px;
+}
+.icon-Garage {
+	width: 256px;
+	height: 256px;
+	background-position: -537px -5px;
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;    
+}
+.icon-Termine {
+	width: 256px;
+	height: 256px;
+	background-position: -803px -5px;
+}
+.icon-Systemmeldungen {
+	width: 256px;
+	height: 256px;
+	background-position: -5px -271px;
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+}
+.icon-Wasser {
+	width: 256px;
+	height: 256px;
+	background-position: -271px -271px;
+}
+.icon-Heizung {
+	width: 256px;
+	height: 256px;
+	background-position: -537px -271px;
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+}
+.icon-Geburtstage {
+	width: 256px;
+	height: 256px;
+	background-position: -803px -271px;
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.warning {
+	margin-bottom: -40px
+}
+.icon-small {
+	float: left;
+	position: absolute;
+	zoom: .18;
+	-moz-transform: scale(.18);
+	/* Firefox */
+	-moz-transform-origin: 0 0;
+}
+.event {
+	font-family: Roboto;
+	margin-left: 10px;
+	color: white;
+	padding-left: 50px;
+	padding-top: 3px;
+	color: #fff;
+	width: auto;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: left;
+}
+.line {
+	width: 300px;
+}
+hr {
+	width: 300px;
+}
+.eventinfo {
+	color: #999;
+}
+br {
+	height: 0px;
+}
+.black {
+	background-color: black;
+}
+.temperatures {
+    background: #000;
+    overflow: hidden;
+}
+.temperatures table {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 18px;
+    width: 100%
+} 
+.temperatures table td, .temperatures table th {
+    width: 20%;
+    padding: 0px 3px;
+    text-align: inherit;
+}
+.temperatures table tbody td {
+    color: white;
+    text-align: inherit;
+}
+.temperatures table tbody td:first-child {
+    border-left: none;
+}
+.temperatures table tbody tr:last-child td {
+    border-bottom: none;
+}
+.temperatureCell table {
+    border-collapse: collapse;
+    border: none;
+} 
+.temperatureCell {
+    font: normal 10px/1 Roboto, sans-serif;
+    overflow: hidden;
+    border: 1px solid #F5F2F3;
+    border-radius: 6px;
+    width: auto;
+    float:left;
+    margin-left : 3px
+}
+.temperatureCell table td, .temperatureCell table th {
+    padding: 3px 10px;
+}
+.header {
+    background-color:#F5F2F3;
+    font: normal 14px/1 Roboto sans-serif;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 10px;
+} 
+.temperatureCell table thead th:first-child {
+    border: none;
+}
+.measure {
+    color: white;
+    font: normal 18px/1 Roboto sans-serif;
+    font-weight: bold;
+    border-top: 10px solid #000000;
+    border-bottom: 10px solid #000000;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 15px;
+}
+.temperatureCell table tbody td:first-child {
+    border-left: none;
+}
+.temperatureCell table tbody tr:last-child td {
+    border-bottom: none;
+}

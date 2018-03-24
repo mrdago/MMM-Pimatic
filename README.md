@@ -36,7 +36,7 @@ Configure the module in your `config.js` . You can find an example configuration
 
 ## Using the module
 
-Pimatic devices of interest for the notification board need to be defined in file`config/config.js`. The following example include three devices.
+Pimatic devices of interest for the notification board need to be defined in the MagicMirror config file`config/config.js`. The following example include three devices.
 ```javascript
 {
 	module: 'MMM-Pimatic',

@@ -33,7 +33,7 @@ Navigate to the new `MMM-Pimatic` folder and install the node dependencies.
 npm install
 ```
 
-Configure the module in your `config.js` . You can find an example configuration in file `config.js-Pimatic`.
+Configure the module in your MagicMirror configuration file `config.js` . You can find an example configuration for the Pimatic module in file `config.js-Pimatic`.
 
 ## Using the module
 

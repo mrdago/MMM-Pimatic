@@ -40,39 +40,74 @@ Configure the module in your MagicMirror configuration file `config.js` . You ca
 Pimatic devices of interest for the notification board need to be defined in the MagicMirror config file``config.js``. The following example include three devices.
 ```javascript
 {
-	module: 'MMM-Pimatic',
-	header: 'Pimatic Notification Board',
-	position: 'top_center',
-	config: {
-		host :'pimatic',
-		port : 80,
-		user : 'YourPimaticLoginUser',
-		passwd : 'YourPimaticLoginUserPassword',
-		style: 'notifications',
-		devices: [
-			{ 
-				name: 'Alarmanlage',
-				icon: 'icon-Alarmanlage',
-				attributeName: 'Alarmanlage.contact',
-				defaultValue: false,
-				notification : 'Eingeschaltet'
-			},
-			{
-				name: 'Termine',
-				icon: 'icon-Termine',
-				attributeName: 'dTermine.Termine',
-				defaultValue: 'keine',
-				notification: '@'
-			},
-			{
-				name: 'Wohnzimmer Steckdose 15 (Test)',
-				icon: 'icon-Default',
-				attributeName: 'wallplug15.state',
-				defaultValue: false,
-				notification: 'eingeschaltet'
-			},                    
-		],
-	},
+    module: 'MMM-Pimatic',
+    header: 'Pimatic Notification Board',
+    position: 'top_center',
+    config: {
+        host :'pimatic',
+        port : 80,
+        user : 'YourPimaticLoginUser',
+        passwd : 'YourPimaticLoginUserPassword',
+        style: 'notifications',
+        devices: [
+            { 
+                name: 'Alarmanlage',
+                icon: 'icon-Alarmanlage',
+                attributeName: 'Alarmanlage.contact',
+                defaultValue: false,
+                notification : 'Eingeschaltet'
+            },
+            {
+                name: 'Termine',
+                icon: 'icon-Termine',
+                attributeName: 'dTermine.Termine',
+                defaultValue: 'keine',
+                notification: '@'
+            },
+            {
+                name: 'Wohnzimmer Steckdose 15 (Test)',
+                icon: 'icon-Default',
+                attributeName: 'wallplug15.state',
+                defaultValue: false,
+                notification: 'eingeschaltet'
+            },                    
+        ],
+    }
+},    
+{
+    module: 'MMM-Pimatic',
+    header: 'Temperaturen',
+    position: 'bottom_center',
+    config: {
+        host :'pimatic',
+        port : 80,
+        user : 'YourPimaticUserLoginName',
+        passwd : 'YourPimaticUserLoginPassword',
+        style: 'temperatures',
+        unit: '&deg',
+        devices: [
+            {
+              name: 'Wohnzimmer',
+              attributeName: 'Temperaturen.Wohnzimmer',
+            },
+            { 
+              name: 'Aussen',
+              attributeName: 'ThermiComPuffer.T7',
+            },                     
+            {
+              name: 'Puffer',
+              attributeName: 'ThermiComPuffer.T6',
+            },
+            {
+              name: 'Gaskessel',
+              attributeName: 'ThermiComKessel.T9',
+            },                    
+            { 
+              name: 'Kollektor',
+              attributeName: 'ThermiComPuffer.T1',
+            },
+        ]
+    }
 },
 ```
 

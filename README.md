@@ -3,14 +3,13 @@ This [MagicMirror](https://github.com/MichMich/MagicMirror) module, connects to 
 
 **Notification Board:**
 
-![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-M1-Pimatic/blob/master/NotificationBoard.PNG?raw=true)
+![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-Pimatic/blob/master/Notifications.PNG?raw=true)
 
 The same modul can also be used to monitor pimatic temperature values displayed in a separate table (Temperature Board).
 
 **Temperature Board:**
 
-![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-M1-Pimatic/blob/master/Temperatures.JPG?raw=true)
-
+![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-Pimatic/blob/master/Temperatures.JPG?raw=true)
 ## Dependencies
 - An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
 - [socket.io-client](https://www.npmjs.com/package/socket.io-client)

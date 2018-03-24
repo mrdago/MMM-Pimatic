@@ -5,7 +5,8 @@ This [MagicMirror](https://github.com/MichMich/MagicMirror) module, connects to 
 
 ![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-M1-Pimatic/blob/master/NotificationBoard.PNG?raw=true)
 
-The modul can also be used to monitor pimatic temperature values displayed in a separate table (Temperature Board).
+The same modul can also be used to monitor pimatic temperature values displayed in a separate table (Temperature Board).
+
 **Temperature Board:**
 
 ![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-M1-Pimatic/blob/master/Temperatures.JPG?raw=true)

@@ -133,7 +133,7 @@ Module.register("MMM-Pimatic", {
                 }                
                 if ( defaultDeviceValue != self.deviceValues[index] && typeof self.deviceValues[index] !== 'undefined' ) {
                     if( typeof element.soundNotification !== "undefined" && !self.devicePlaySound[index] ) {
-                        self.sendNotification( 'PLAY_SOUND_NOTIFICATION', {loop: element.soundNotification,
+                        self.sendSocketNotification( 'PLAY_SOUND_NOTIFICATION', {loop: element.soundNotification,
                                                                            device: element.soundDevice,
                                                                            file: element.soundFile} );
                         self.devicePlaySound[index] = true
@@ -167,7 +167,7 @@ Module.register("MMM-Pimatic", {
 
                 } else {
                     if( self.deviceValueChange[index] && self.devicePlaySound[index] ){
-                        self.sendNotification('STOP_SOUND_NOTIFICATION');
+                        self.sendSocketNotification('STOP_SOUND_NOTIFICATION');
                         self.devicePlaySound[index] = false;
                     }  
                 }

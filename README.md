@@ -1,11 +1,11 @@
 # Module: MMM-Pimatic
-This [MagicMirror](https://github.com/MichMich/MagicMirror) module, connects to a [pimatic](https://pimatic.org/) home automation server to listen on device attribute changes and displays changes as notifications. Temperature values can be displayed in a separate table.
+This [MagicMirror](https://github.com/MichMich/MagicMirror) module, connects to a [pimatic](https://pimatic.org/) home automation server to listen on device attribute changes. Received values are compared to a default value and displayed as entry in a notification board. The modul can also used to monitor pimatic temperature values displayed in a separate table.
 
-Notification Board:
+**Notification Board:**
 
 ![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-M1-Pimatic/blob/master/NotificationBoard.PNG?raw=true)
 
-Temperature Board:
+**Temperature Board:**
 
 ![Magic-Mirror Module MMM-M1-Pimatic - Notification Board](https://github.com/mrdago/MMM-M1-Pimatic/blob/master/Temperatures.JPG?raw=true)
 

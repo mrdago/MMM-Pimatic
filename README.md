@@ -117,12 +117,15 @@ The following properties needs to be configured:
 
 |Option|Description|
 |---|---|
-|`host`|Hostname or IP of your [pimatic](https://pimatic.org/) home automation server.|
-|`port`|Port to connect to your pimatic server, configured in ``config.json`` of your **pimatic installation**|
-|`user`|User login name configured in ``config.json`` of your **pimatic installation**|
-|`passwd`|Passwd of your specified pimatic user login name|
-|`style`|The style to use for displaying values<br>**Possible values:**  ``notifications`` for the Notification Board or  ``temperatures`` for the Temperature Board|
-|`devices`| List of devices and related device attributes to monitor by the modul.|<br>Each device specification consists of:<br>
+|**host**|Hostname or IP of your [pimatic](https://pimatic.org/) home automation server.|
+|**port**|Port to connect to your pimatic server, configured in ``config.json`` of your **pimatic installation**|
+|**user**|User login name configured in ``config.json`` of your **pimatic installation**|
+|**passwd**|Passwd of your specified pimatic user login name|
+|**style**|The style to use for displaying values<br>**Possible values:**  ``notifications`` for the Notification Board or  ``temperatures`` for the Temperature Board|
+|**devices**| List of devices and related device attributes to monitor by the modul.|
+
+Each device specification consists of the following keys:
+
 |Key|Value|
 |---|---|
 |**name**|A static text to display as the first line of the message placed in the notification board. You can choose a name independent from the pimatic device definition.|

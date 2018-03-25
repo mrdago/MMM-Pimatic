@@ -117,7 +117,7 @@ The following properties needs to be configured:
 
 |Option|Description|
 |---|---|
-|`host`|Hostname/IP of your pimatic home automation server.|
+|`host`|Hostname or IP of your [pimatic](https://pimatic.org/) home automation server.|
 |`port`|Port to connect to your pimatic server, configured in ``config.json`` of your **pimatic installation**|
 |`user`|User login name configured in ``config.json`` of your **pimatic installation**|
 |`passwd`|Passwd of your specified pimatic user login name|

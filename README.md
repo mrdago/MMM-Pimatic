@@ -129,10 +129,13 @@ Each device specification consists of the following keys:
 |Key|Value|
 |---|---|
 |``name``|A static text to display as the first line of the message placed in the notification board. You can choose a name independent from the pimatic device definition.|
-|``notification``|Text to show as the second line of the message placed in the Notification Board<br>Possible values are a static text, the place holder `@` or a mix of text including the place holder. The place holder `@` will be replaced by the the received value of the device attribute before the text is displayed in the Notification Board.|
+|``notification``|Text to show as the second line of the message placed in the Notification Board.<br>Possible values are a static text, the place holder `@` or a text including the place holder. The place holder `@` will be replaced by the the received value of the device attribute before the text is displayed in the Notification Board.|
 |``icon``|Icon to show in front of the notification. Icon names are defined in style sheet file `MMM-Pimatc.css`. Check the style sheet file for use of blinking icons for important notifications. You can design your own icons by editing the `icon-pimatic.png` file under directory icons with a bit map editor.|
-|``attributeName``|Pimatic device attributeName. The `attributeName` consist of a pimatic device-id and a related attribute. Go to the pimatic GUI and find the valid device attribute names for your configured devices under `Menu - Variables - Device Attributes`.|
-|``defaultValue``|Default device attribute value. Every received device attribute value is compared against his `defaultValue`. In case that the actual received value differ from the default value, the message text defined in `notification` is shown in the Notification Board. If for example the default value `false` change to `true`, the specified `notification` is displayed. If the device attribute value changes back to his default value the notification will be removed from the Notification Board.|<br>
+|``attributeName``|Pimatic device attribute name. The `attributeName` consist of a pimatic device-id and a related attribute. Go to the pimatic GUI and find the valid device attribute names for your configured devices under `Menu - Variables - Device Attributes`.|
+|``defaultValue``|Default device attribute value. Every received device attribute value is compared against his `defaultValue`. In case that the actual received value differ from the default value, the message text defined in `notification` is shown in the Notification Board. If for example the default value `false` change to `true`, the specified `notification` is displayed. If the device attribute value changes back to his default value the notification will be removed from the Notification Board.|
+
+Devices for the Temperature Board requires only the keys ``name`` and ``attributeName``.
+
 ## Special Thanks
 - [Michael Teeuw](https://github.com/MichMich) for creating the awesome [MagicMirror2](https://github.com/MichMich/MagicMirror/tree/develop) project that made this module possible.
 - [Lukas Scheffler](https://github.com/LukeSkywalker92) for creating the [MMM-DWD-WarnWeather](https://github.com/LukeSkywalker92/MMM-DWD-WarnWeather) module that I used as guidance in creating this module.
